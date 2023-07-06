@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: aquamarine;
+    padding: 150px 20px 20px;
+    background: #f3f3f3;
+    align-items: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    padding: 30px 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aquamarine;
+    text-transform: uppercase;
+    text-align: center;
+    gap: 30px;
+}
+
+nav .about {
+    position: relative;
+    letter-spacing: 2px;
+}
+
+nav .about:hover {
+    color: #002900;
+    padding-bottom: 5px;
+}
+
+nav .about:after {
+    content: "";
+    width: 0;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    position: absolute;
+    background: #002900;
+    transition: .3s;
+}
+
+nav .about:hover:after {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.content div {
+    position: relative;
+}
+
+.password-container div iconify-icon {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.content div iconify-icon:hover {
+    color: green;
+}
+
+.password-container div small {
+    position: absolute;
+    top: -45%;
+    right: 0;
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    display: none;
+}
+
+.password {
+    border: 1px solid rgba(243, 243, 243, .5);
+    width: fit-content;
+    padding: 10px 50px 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, .5);
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.background-container {
+    border: 1px solid aquamarine;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    display: none;
+}
+
+.background-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.background-container iconify-icon {
+    position: absolute;
+    right: 3%;
+    top: 60%;
+    display: none;
+    cursor: pointer;
+}
+
+.background-container .hex {
+    margin-top: 20px;
+}
+
+.background-container small {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.1rem;
+    color: #f3f3f3;
+}
+
+.back-rgb, .back-hex {
+    border: 1px solid #f3f3f3;
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, .5);
+}
+
+.content button {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid aquamarine;
+    background-color:aquamarine;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.content button:hover {
+    background-color: aqua;
+}
+
+@media (max-width: 500px) {
+    button {
+        color: #000;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Password and Gradient</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <h1>Password & Gradient Generator</h1>
+        <a href="about.html" class="about">About</a>
+    </nav>
+    <div class="hero" id="hero">
+        <div class="content">
+            <div class="password-container">
+                <h1 style="color: #f3f3f3;">Password:</h1>
+                <div>
+                    <h1 class="password" id="password"></h1>
+                    <iconify-icon icon="solar:copy-line-duotone" id="copy"></iconify-icon>
+                    <small id="small"></small>
+                </div>
+            </div>
+            <div class="background-container" id="back-cont">
+               <div>
+                    <h3 style="color: #f3f3f3">RGB</h3>
+                    <small id="small1"></small>
+                    <p class="back-rgb" id="back-rgb"></p>
+                    <iconify-icon icon="solar:copy-line-duotone" id="copy1"></iconify-icon>
+               </div>
+               <div class="hex">
+                    <h3 style="color: #f3f3f3">HEX</h3>
+                    <small id="small2"></small>
+                    <p class="back-hex" id="back-hex"></p>
+                    <iconify-icon icon="solar:copy-line-duotone" id="copy2"></iconify-icon>
+               </div>
+            </div>
+            <button id="button">Generate Password & Gradient</button>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script><script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
